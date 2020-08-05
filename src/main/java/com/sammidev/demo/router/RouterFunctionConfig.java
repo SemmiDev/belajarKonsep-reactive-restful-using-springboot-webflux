@@ -1,6 +1,6 @@
-package com.sammidev.demo.intro.router;
+package com.sammidev.demo.router;
 
-import com.sammidev.demo.intro.handler.SampleHandleFunction;
+import com.sammidev.demo.handler.SampleHandleFunction;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
@@ -16,7 +16,7 @@ public class RouterFunctionConfig {
     @Bean
     public RouterFunction<ServerResponse> routeFlux(SampleHandleFunction sampleHandleFunction) {
         return RouterFunctions
-                .route(GET("/functions/flux").and(accept(MediaType.APPLICATION_JSON)), sampleHandleFunction::flux)
-                .andRoute(GET("/functions/mono").and(accept(MediaType.APPLICATION_JSON)), sampleHandleFunction::mono);
+                .route(GET("/functional/flux").and(accept(MediaType.APPLICATION_JSON)), sampleHandleFunction::flux)
+                .andRoute(GET("/functional/mono").and(accept(MediaType.APPLICATION_JSON)), sampleHandleFunction::mono);
     }
 }

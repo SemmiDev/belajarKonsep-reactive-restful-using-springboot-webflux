@@ -1,4 +1,4 @@
-package com.sammidev.demo.intro.handler;
+package com.sammidev.demo.handler;
 
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;

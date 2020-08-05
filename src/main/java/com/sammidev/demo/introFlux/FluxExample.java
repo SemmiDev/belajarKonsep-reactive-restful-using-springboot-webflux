@@ -1,4 +1,4 @@
-package com.sammidev.demo.intro.introFlux;
+package com.sammidev.demo.introFlux;
 
 import org.junit.Test;
 import reactor.core.publisher.Flux;

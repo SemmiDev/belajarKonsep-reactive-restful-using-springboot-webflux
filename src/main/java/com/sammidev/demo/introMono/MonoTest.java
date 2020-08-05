@@ -1,4 +1,4 @@
-package com.sammidev.demo.intro.introMono;
+package com.sammidev.demo.introMono;
 
 import org.junit.Test;
 import reactor.core.publisher.Mono;
